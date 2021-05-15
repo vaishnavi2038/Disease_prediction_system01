@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Baloo Bhai 2", cursive;
+  /* background-color: red; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  padding: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+nav::before {
+  content: "";
+  position: absolute;
+  background: rgb(20, 142, 190) no-repeat center center/cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+nav #logo {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+#navbar ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  list-style: none;
+}
+
+#navbar ul a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 34px;
+  color: white;
+}
+#navbar ul a:hover {
+  color: rgb(20, 142, 190);
+  background-color: white;
+}
+
+#home-section {
+  display: flex;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+}
+
+#home-section::before {
+  content: "";
+  position: absolute;
+  background: url("imgs/home.jpg") no-repeat center center/cover;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+#home-section h1 {
+  font-size: 3.2rem;
+}
+
+#home-section button {
+  padding: 8px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 34px;
+  background-color: rgb(20, 142, 190);
+}
+
+#home-section button a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+#home-section button a:hover {
+  color: rgb(20, 142, 190);
+}
+
+#home-section button:hover {
+  background-color: white;
+}
+
+p {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.7rem;
+}
+
+.guide {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.guide #steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1rem 1rem;
+}
+
+.guide #steps p {
+  border: skyblue solid 3px;
+  box-shadow: 5px 5px skyblue;
+  padding: 18px 5px;
+}
+
+#predict-section {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#predict-section::before {
+  content: "";
+  position: absolute;
+  background: url("imgs/extra.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 59%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#predict-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#predict-section form input,
+datalist {
+  padding: 5px;
+  width: 40rem;
+  border-radius: 34px;
+  border: rgb(20, 142, 190) solid 1px;
+  margin: 4px;
+}
+
+input[type="submit"] {
+  background-color: rgb(20, 142, 190);
+  color: white;
+  border: none;
+  border-radius: 34px;
+  padding: 8px 20px;
+  margin: 5px;
+  width: 100%;
+  font-size: 1.2rem;
+}
+input[type="submit"]:hover {
+  background-color: skyblue;
+  cursor: pointer;
+}
+
+#covid-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  color: white;
+}
+
+#covid-section::before {
+  content: "";
+  position: absolute;
+  background: url("imgs/covid.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 115%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+#covid-section form .ip {
+  display: flex;
+  flex-direction: column;
+  margin: 4px;
+  background-color: rgb(2, 57, 78);
+  border: 1px black solid;
+}
+
+#covid-section form .ip p {
+  margin: 4px;
+}
+
+#about-section {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-section .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  height: 15rem;
+}
+#about-section .container .box {
+  display: grid;
+  padding: 20px;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  box-shadow: skyblue 5px 5px 5px;
+  background-color: whitesmoke;
+}
+#mid-box {
+  grid-column: 2 / 3;
+}
+
+#contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 477px;
+  color: white;
+}
+
+#contact-section::before {
+  content: "";
+  position: absolute;
+  background: url("imgs/contact.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 84%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#contact-section form input[type="text"],
+input[type="email"],
+textarea {
+  padding: 5px;
+  width: 40rem;
+  border-radius: 34px;
+  border: rgb(20, 142, 190) solid 1px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(20, 142, 190);
+  color: white;
+  padding: 10px;
+}
+
+#predict-result,
+#covid-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 100%;
+  color: rgb(3, 72, 99);
+  margin: 15px;
+}
+#predict-result p {
+  margin: 0px 35px;
+}
+
+#predict-result::before,
+#covid-result::before {
+  content: "";
+  background: url("imgs/result.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}

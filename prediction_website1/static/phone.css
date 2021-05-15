@@ -1,0 +1,62 @@
+p {
+  font-size: 0.8rem;
+}
+h2 {
+  font-size: 1.1rem;
+}
+h3 {
+  font-size: 1rem;
+}
+
+#home-section {
+  text-align: center;
+  height: 470px;
+
+}
+#home-section h1 {
+  font-size: 1.8rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+#navbar ul a {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+
+#predict-section form input,
+datalist,
+#covid-section form .ip input[list],
+#contact-section form input[type="text"],
+input[type="email"],
+textarea {
+  width: 12rem;
+}
+#about-section {
+  height: 750px;
+}
+#about-section #phn {
+  height: 10rem;
+}
+
+#about-section .container {
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+}
+
+#mid-box {
+  grid-column: auto;
+}
+
+.guide #steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.guide {
+  height: 340px;
+}
